@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'b544d4ea-df81-446b-9d68-a55c1bb0d383'
-  imageRepository: 'venkatpinnamarajusamplemini'
+  imageRepository: 'venapp1/ngnix'
   containerRegistry: 'venacraks.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile.txt'
   tag: '$(Build.BuildId)'
