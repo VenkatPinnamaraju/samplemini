@@ -38,12 +38,7 @@ stages:
         tags: |
           $(tag)
     
-    - task: CopyFiles@2
-      displayName: 'Copy main.tf to artifacts'
-      inputs:
-        SourceFolder: '$(System.DefaultWorkingDirectory)'
-        Contents: '**'
-        TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    
         
     - task: PublishPipelineArtifact@1
       inputs:
